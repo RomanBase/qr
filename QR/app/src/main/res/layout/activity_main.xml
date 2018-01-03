@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/root_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ankhrom.qr.MainActivity">
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/zxing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/permission_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/permission_icon_size"
+            android:layout_height="@dimen/permission_icon_size"
+            android:src="@drawable/ic_camera"
+            android:tint="#FDDD"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_padding"
+            android:layout_marginTop="@dimen/base_padding"
+            android:text="Please provide permission\nto access your camera."
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="@dimen/permission_icon_size"
+            android:layout_height="wrap_content"
+            android:onClick="onRequestCameraPermissionPressed"
+            android:text="OK"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

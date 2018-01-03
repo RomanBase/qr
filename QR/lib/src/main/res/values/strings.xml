@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="empty">""</string>
+    <string name="app_name">BaseBinding</string>
+
+    <string name="open_menu">Menu - open</string>
+    <string name="close_menu">Menu - close</string>
+    <string name="search_label">Search</string>
+</resources>
